@@ -1,0 +1,47 @@
+#wrapper table.dataTable thead .sorting:after {
+    content: '';
+}
+
+#wrapper table.dataTable thead .sorting_desc:after {
+    content: '';
+}
+
+#wrapper table.dataTable thead .sorting_asc:after {
+    content: '';
+}
+
+#wrapper .dataTables_wrapper .dataTables_paginate .paginate_button:hover,
+#wrapper .dataTables_wrapper .dataTables_paginate .paginate_button.active {
+    border: 1px solid #d2d2d2;
+    background: #0ebb85;
+    color: #fff;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button a {
+    color: #0ebb85;
+}
+
+#wrapper .dataTables_wrapper .dataTables_paginate .paginate_button.active a,
+#wrapper .dataTables_wrapper .dataTables_paginate .paginate_button:hover a {
+    color: #fff;
+}
+
+div .row {
+    width: 100%;
+    overflow: hidden;
+}
+
+.input-sm {
+    margin: 0 10px 0 10px;
+}
+
+.input-group .form-control {
+    max-height: 38px;
+}
+
+.dataTables_wrapper .col-sm-12 {
+    overflow: auto;
+}
+.content-page {
+    margin-left: 0; !important;
+}

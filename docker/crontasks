@@ -1,4 +1,5 @@
 # example
-# * * * * * echo 'OK' >> /crontest.log
+
+* * * * * php /var/www/html/artisan schedule:run >> /dev/null 2>&1
 
 # don-t remove its comment
