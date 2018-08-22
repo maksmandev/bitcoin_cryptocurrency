@@ -79,9 +79,9 @@ class GetBitcoinCost extends Command
 
         $bitcoinPricesFields = [
             'updated' => $contentArray->time->updated,
-            'usd' => $bitcoinByCurrencies->USD->rate_float,
-            'eur' => $bitcoinByCurrencies->EUR->rate_float,
-            'gbp' => $bitcoinByCurrencies->GBP->rate_float
+            'usd' => round($bitcoinByCurrencies->USD->rate_float,2),
+            'eur' => round($bitcoinByCurrencies->EUR->rate_float,2),
+            'gbp' => round($bitcoinByCurrencies->GBP->rate_float,2)
         ];
 
         $bitcoinPriceModel::updateOrCreate(['updated' => $bitcoinPricesFields['updated']], $bitcoinPricesFields);
