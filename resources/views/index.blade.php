@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Price for 1 Bitcoin')
+@section('title', 'Price for 1 Bitcoin (updated every minute)')
 
 @section('content')
     <div class="content">
