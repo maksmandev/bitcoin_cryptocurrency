@@ -30,8 +30,8 @@ class BitcoinPriceTable extends DataTable
      */
     public function query(BitcoinPrice $model): \Illuminate\Database\Eloquent\Builder
     {
-        return $model->newQuery()
-            ->orderBy('updated', 'desc');
+        return $model->newQuery();
+
     }
 
     /**
@@ -44,7 +44,12 @@ class BitcoinPriceTable extends DataTable
         return $this->builder()
             ->columns($this->getColumns())
             ->minifiedAjax()
-            ->parameters();
+            ->parameters([
+                'order' => [
+                    0,
+                    'desc'
+                ]
+            ]);
     }
 
     /**
